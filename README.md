@@ -1,1 +1,1 @@
-# NYUAD-iGEM-2025-CDG-Video
+# NYUAD-iGEM-2025-CDG-Game
