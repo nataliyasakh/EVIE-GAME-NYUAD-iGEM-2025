@@ -1,0 +1,41 @@
+/* style.css */
+body {
+  background: #38b000; /* bright green */
+  font-family: sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #fff;
+  margin-top: 40px;
+}
+
+.plasmid-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.plasmid {
+  width: 120px;
+  height: 120px;
+  background: #fff;
+  border: 5px solid #0a5d00;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2em;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.plasmid:hover {
+  transform: scale(1.08);
+  background: #b7efc5;
+}
