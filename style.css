@@ -20,14 +20,14 @@ body {
 
 .plasmid {
   position: relative;
-  width: 500px;      
-  height: 500px;     
+  width: 300px;      
+  height: 300px;     
   cursor: pointer;
 }
 
 .plasmid img {
-  width: 500%;       
-  height: 500%;      
+  width: 200%;       
+  height: 200%;      
   display: block;
 }
 .plasmid span {
