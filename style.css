@@ -11,32 +11,35 @@ body {
     margin-top: 40px;
   }
   
-  .plasmid-container {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-top: 60px;
-  }
-  
-  .plasmid {
-    width: 120px;
-    height: 120px;
-    background: url('plasmid.jpg') center/cover no-repeat, #fff;
-    border: 5px solid #0a5d00;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    font-size: 1.2em;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-    cursor: pointer;
-    transition: transform 0.2s;
-    color: #0a5d00; /* For contrast over the image */
-    text-shadow: 0 1px 4px #fff, 0 0px 10px #fff;
-  }
+.plasmid-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 60px;
+}
 
-  .plasmid:hover {
-    transform: scale(1.08);
-    background: #b7efc5;
-  }
+.plasmid {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+}
+
+.plasmid img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.plasmid span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #0a5d00;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-shadow: 0 2px 6px #fff;
+  pointer-events: none;
+  user-select: none;
+}
